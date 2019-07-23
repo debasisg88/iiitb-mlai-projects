@@ -1,0 +1,1065 @@
+2019-07-21 16:48:47,799 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-21 16:48:59,717 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-21 16:54:13,962 [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<configure_app.<locals>.run_cmdline_io() done, defined at /Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py:115> exception=AttributeError("'NoneType' object has no attribute 'find'",)>
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py", line 119, in run_cmdline_io
+    server_url=constants.DEFAULT_SERVER_FORMAT.format(port)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 122, in record_messages
+    text = get_cmd_input(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 66, in get_cmd_input
+    response = rasa.cli.utils.payload_from_button_question(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/cli/utils.py", line 198, in payload_from_button_question
+    payload = response[response.find("(") + 1 : response.find(")")]
+AttributeError: 'NoneType' object has no attribute 'find'
+2019-07-21 17:06:20,386 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-21 17:06:32,822 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 13:29:45,078 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 13:29:58,541 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 13:30:16,573 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL / not found
+2019-07-22 13:30:17,437 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-07-22 18:43:27,032 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 18:43:43,885 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 18:44:25,439 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/w'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /w not found
+2019-07-22 18:45:09,055 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/webhooks/{channel}/webhook'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/{channel}/webhook not found
+2019-07-22 18:45:11,202 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/webhooks/{channel}/webhook'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/{channel}/webhook not found
+2019-07-22 18:51:15,098 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/slack'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /slack not found
+2019-07-22 18:51:17,723 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/slack'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /slack not found
+2019-07-22 18:51:26,140 [ERROR]  Exception occurred while handling uri: 'http://36eb8231.ngrok.io/slack/events'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /slack/events not found
+2019-07-22 18:54:19,723 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-07-22 19:00:58,781 [WARNI]  Slack API currently allows only up to 5 buttons. If you add more, all will be ignored.
+2019-07-22 19:08:26,176 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:08:40,748 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:08:47,568 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-22 19:09:02,705 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:09:15,506 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:09:24,335 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "uvloop/loop.pyx", line 1112, in uvloop.loop.Loop._create_server
+  File "uvloop/handles/streamserver.pyx", line 58, in uvloop.loop.UVStreamServer.listen
+  File "uvloop/handles/streamserver.pyx", line 95, in uvloop.loop.UVStreamServer._fatal_error
+OSError: [Errno 48] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1451, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1684, in create_server
+  File "uvloop/loop.pyx", line 1116, in uvloop.loop.Loop._create_server
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-07-22 19:10:15,812 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:10:26,993 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:34:40,640 [INFO ]  Killing Sanic server now.
+2019-07-22 19:35:08,730 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:35:21,253 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:37:23,453 [ERROR]  Task exception was never retrieved
+future: <Task finished coro=<configure_app.<locals>.run_cmdline_io() done, defined at /Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py:115> exception=AttributeError("'NoneType' object has no attribute 'find'",)>
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/run.py", line 119, in run_cmdline_io
+    server_url=constants.DEFAULT_SERVER_FORMAT.format(port)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 122, in record_messages
+    text = get_cmd_input(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/core/channels/console.py", line 66, in get_cmd_input
+    response = rasa.cli.utils.payload_from_button_question(button_question)
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasa/cli/utils.py", line 198, in payload_from_button_question
+    payload = response[response.find("(") + 1 : response.find(")")]
+AttributeError: 'NoneType' object has no attribute 'find'
+2019-07-22 19:37:36,353 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 19:37:48,511 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 19:54:25,416 [INFO ]  Killing Sanic server now.
+2019-07-22 21:33:30,967 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 21:33:46,505 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 21:40:55,363 [INFO ]  Killing Sanic server now.
+2019-07-22 21:41:09,721 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 21:41:21,898 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 21:45:52,483 [INFO ]  Killing Sanic server now.
+2019-07-22 23:12:23,483 [WARNI]  Could not run model discovery.
+2019-07-22 23:12:26,520 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:28,519 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:30,514 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:32,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:34,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:36,513 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:38,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:40,514 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:42,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:44,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:46,509 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:48,515 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:50,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:52,513 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:54,513 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:56,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:12:58,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:00,509 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:02,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:04,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:06,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:08,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:10,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:12,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:14,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:16,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:18,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:20,509 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:22,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:24,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:26,541 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:28,519 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:30,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:32,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:34,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:36,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:38,508 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:40,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:42,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:44,540 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:46,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:48,508 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:50,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:52,508 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:54,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:56,508 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:13:58,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:00,507 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:02,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:04,531 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:06,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:08,509 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:10,508 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:12,508 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:14,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:16,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:18,511 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:20,539 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:22,535 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:24,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:26,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:28,527 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:30,514 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:32,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:34,510 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:36,514 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:38,519 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:40,512 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:42,509 [ERROR]  [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+Traceback (most recent call last):
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/rasax/community/api/blueprints/models.py", line 93, in get_model_for_tag
+    mime_type="application/zip",
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/sanic/response.py", line 348, in file_stream
+    _file = await open_async(location, mode="rb")
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/base.py", line 68, in __await__
+    resp = yield from self._coro
+  File "/Users/Deb/anaconda3/lib/python3.6/site-packages/aiofiles/threadpool/__init__.py", line 35, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+  File "/Users/Deb/anaconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: 'models/20190722-201952.tar.gz'
+2019-07-22 23:14:56,158 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-22 23:15:13,768 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-22 23:20:42,797 [INFO ]  Killing Sanic server now.

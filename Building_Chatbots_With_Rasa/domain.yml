@@ -1,0 +1,114 @@
+intents:
+- affirm
+- ask_email_address
+- deny
+- goodbye
+- greet
+- out_of_scope
+- restaurant_search
+entities:
+- budget
+- cuisine
+- email
+- loaction
+- location
+slots:
+  budget:
+    type: text
+  cuisine:
+    type: text
+  email:
+    type: text
+  location:
+    type: text
+templates:
+  utter_greet:
+  - text: Hey there! I am Kyra, your restaurant search assistant. How can I help you?
+  - text: Hello! I am Kyra, your restaurant search assistant. How can I help you?
+  - text: Hi! I am Kyra, your restaurant search assistant. How can I help you?
+  - text: Namaste! I am Kyra, your restaurant search assistant. How can I help you?
+  utter_ask_location:
+  - text: In which city are you looking for restaurants?
+  utter_location_not_operated:
+  - text: We do not operate in that area yet. Do you want to specify some other location?
+  utter_ask_cuisine:
+  - text: What kind of cuisine would you like?
+    buttons:
+    - title: Chinese
+      payload: Chinese
+    - title: Mexican
+      payload: Mexican
+    - title: Italian
+      payload: Italian
+    - title: American
+      payload: American
+    - title: South Indian
+      payload: South Indian
+    - title: North Indian
+      payload: North Indian
+  utter_ask_budget:
+  - text: What price range (average budget for two people) are you looking at?
+    buttons:
+    - title: Lesser than 300
+      payload: Lesser than 300
+    - title: 300 to 700
+      payload: 300 to 700
+    - title: More than 700
+      payload: More than 700
+  utter_ask_send_to_email:
+  - text: Should I send you details of all the restaurants on email?
+  utter_ask_email_id:
+  - text: Can you please tell me your email id?
+  utter_goodbye:
+  - text: goodbye...
+  - text: bye bye...
+  - text: bye...
+  utter_out_of_scope:
+  - text: Sorry, I didn't get that, can you rephrase it?
+  utter_chat_restart:
+  - text: Closing this chat session. A new session is opened for a new chat.
+  utter_no_restaurants:
+  - text: No restaurants found with the given search criteria.
+  utter_cuisine_not_valid:
+  - text: This is a not a valid cuisine search criteria for us.
+  utter_help:
+  - text: Let me help you from beginning.
+  utter_search_limit_reached:
+  - text: We do not operate in that area yet. We only operate in only in Tier-1 and
+      Tier-2 cities. You can check the current HRA classification of the cities from
+      here(https://en.wikipedia.org/wiki/Classification_of_Indian_cities). Closing
+      the session.
+  utter_budget_not_valid:
+  - text: This is not a valid budget search criteria for us.
+  utter_cuisine_not_valid_aswell:
+  - text: Thank You. Also, entered cuisine is not a valid one. Let me help you on
+      that.
+  utter_budget_not_valid_aswell:
+  - text: Thank You. Also, entered budget is not a valid one. Let me help you on that.
+  utter_looking_for_restaurants:
+  - text: Looking for restaurants...
+actions:
+- action_check_email_id
+- action_restaurant
+- action_send_email
+- action_validate_budget
+- action_validate_cuisine
+- action_validate_location
+- utter_ask_budget
+- utter_ask_cuisine
+- utter_ask_email_id
+- utter_ask_location
+- utter_ask_send_to_email
+- utter_budget_not_valid
+- utter_budget_not_valid_aswell
+- utter_chat_restart
+- utter_cuisine_not_valid
+- utter_cuisine_not_valid_aswell
+- utter_goodbye
+- utter_greet
+- utter_help
+- utter_location_not_operated
+- utter_looking_for_restaurants
+- utter_no_restaurants
+- utter_out_of_scope
+- utter_search_limit_reached

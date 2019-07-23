@@ -1,0 +1,24 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline: pretrained_embeddings_spacy
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: KerasPolicy
+    featurizer:
+      - name: FullDialogueTrackerFeaturizer
+        state_featurizer:
+          - name: BinarySingleStateFeaturizer
+    augmentation_factor: 50
+    epochs: 500
+    batch_size: 30
+    validation_split: 0.2
+  #- name: MappingPolicy
+  #- name: TwoStageFallbackPolicy
+  #  nlu_threshold: 0.3
+  #  core_threshold: 0.3
+  #  fallback_core_action_name: "action_default_fallback"
+  #  fallback_nlu_action_name: "action_default_fallback"
+  #  deny_suggestion_intent_name: "out_of_scope"
