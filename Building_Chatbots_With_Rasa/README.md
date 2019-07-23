@@ -41,6 +41,6 @@ Finally, the bot should ask the user whether he/she wants the details of the top
  
 ## Goals of this Project
 In this project, you will build a chatbot for ‘Foodie’ and then deploy it on Slack. You need to accomplish the following in the project:
-1. **NLU training:**
-2. **Build actions for the bot.**
-3. **Creating more stories:**
+1. **NLU training**
+2. **Build actions for the bot**
+3. **Creating more stories**
