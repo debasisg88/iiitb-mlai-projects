@@ -6,5 +6,7 @@ Contains the following Projects and Assignments
 - Telecom Churn Case Study (Handling Imbalanced Dataset, Logistic Regression, PCA, SVM, Decison Tree, Random Forest, Adaboost, XGBoost and LightGBM)
 - HMMs and Viterbi algorithm for POS tagging (Natural Language Processing Syntactic Analysis Assignment)
 - Building Chatbots With Rasa
-- Neural Networks - Assignment
-- Gesture Recognition Case Study
+- Neural Networks - Assignment using Numpy
+- Neural Networks Project - Gesture Recognition
+- Classical Reinforcement Learning Assignment - Tic-Tac-Toe
+- Reinforcement Learning Project - Maximise total profit of Cab Driver at SuperCabs
