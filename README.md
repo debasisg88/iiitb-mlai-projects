@@ -7,3 +7,4 @@ Contains the following Projects and Assignments
 - HMMs and Viterbi algorithm for POS tagging (Natural Language Processing Syntactic Analysis Assignment)
 - Building Chatbots With Rasa
 - Neural Networks - Assignment
+- Gesture Recognition Case Study
